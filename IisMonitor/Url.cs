@@ -54,7 +54,7 @@ namespace IisMonitor
             return request;
         }
 
-        public SiteStatus GetStatus(
+        public UrlStatus GetStatus(
             List<string> hosts)
         {
             var request = GetRequest(LocalUri, Host);
@@ -96,7 +96,7 @@ namespace IisMonitor
                 response = request.GetResponseNoException();
             }
 
-            return new SiteStatus
+            return new UrlStatus
             {
                 Url = this,
                 Code = (int)response.StatusCode,
@@ -106,7 +106,7 @@ namespace IisMonitor
         }
     }
 
-    public class SiteStatus
+    public class UrlStatus
     {
         public Url Url { get; set; }
         public int Code { get; set; }

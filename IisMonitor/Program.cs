@@ -96,7 +96,7 @@ namespace IisMonitor
         }
 
         private static void SendNotification(
-            SiteStatus status)
+            UrlStatus status)
         {
             using (var smtpClient = new SmtpClient())
             {

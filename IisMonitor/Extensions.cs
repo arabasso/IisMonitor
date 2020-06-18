@@ -86,11 +86,11 @@ namespace IisMonitor
             return statusCode >= 300 && statusCode <= 399;
         }
 
-        public static SiteStatus ToSiteStatus(
+        public static UrlStatus ToSiteStatus(
             this Exception exception,
             Url url)
         {
-            return new SiteStatus
+            return new UrlStatus
             {
                 Url = url,
                 Code = -1,
