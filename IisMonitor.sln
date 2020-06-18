@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IisMonitor", "IisMonitor\IisMonitor.csproj", "{DFADEDA3-6C8C-431F-B380-E833DAB2B77F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFADEDA3-6C8C-431F-B380-E833DAB2B77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFADEDA3-6C8C-431F-B380-E833DAB2B77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFADEDA3-6C8C-431F-B380-E833DAB2B77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFADEDA3-6C8C-431F-B380-E833DAB2B77F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1192388-9278-4D20-AB82-D4D7442A3E69}
+	EndGlobalSection
+EndGlobal
