@@ -96,17 +96,13 @@ namespace IisMonitor
                 response = request.GetResponseNoException();
             }
 
-            using (var stream = response.GetResponseStream())
-            using (var reader = new StreamReader(stream, Encoding.GetEncoding(response.CharacterSet ?? "utf-8")))
+            return new SiteStatus
             {
-                return new SiteStatus
-                {
-                    Url = this,
-                    Code = (int)response.StatusCode,
-                    Description = response.StatusDescription,
-                    Response = reader.ReadToEnd()
-                };
-            }
+                Url = this,
+                Code = (int)response.StatusCode,
+                Description = response.StatusDescription,
+                Response = response.GetString()
+            };
         }
     }
 
